@@ -1,9 +1,12 @@
 import { BreadcrumbComponent, NodeComponent } from "components";
+import { nodeList } from "components/nodeList";
 
 function MainPage() {
+  console.log("Main Page");
+  console.log("value: " + nodeList);
   return (
     <>
-      <BreadcrumbComponent />
+      <BreadcrumbComponent list={nodeList} />
       <NodeComponent />
     </>
   );
